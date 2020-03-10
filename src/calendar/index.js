@@ -11,6 +11,7 @@ import UnitDay from './day/period';
 import MultiDotDay from './day/multi-dot';
 import MultiPeriodDay from './day/multi-period';
 import SingleDay from './day/custom';
+import PeriodDotsDay from './day/period-dots';
 import CalendarHeader from './header';
 import shouldComponentUpdate from './updater';
 import {SELECT_DATE_SLOT} from '../testIDs';
@@ -180,7 +181,6 @@ class Calendar extends Component {
     const date = day.getDate();
     const dateAsObject = xdateToData(day);
     const accessibilityLabel = `${state === 'today' ? 'today' : ''} ${day.toString('dddd MMMM d')} ${this.getMarkingLabel(day)}`;
-
     return (
       <View style={{flex: 1, alignItems: 'center'}} key={id}>
         <DayComp
@@ -242,6 +242,8 @@ class Calendar extends Component {
       return MultiPeriodDay;
     case 'custom':
       return SingleDay;
+    case 'period-dots': 
+      return PeriodDotsDay;
     default:
       return Day;
     }
