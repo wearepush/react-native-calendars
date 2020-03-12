@@ -17,7 +17,7 @@ const NUMBER_OF_PAGES = 2; // must be a positive number
 
 /**
  * @description: Week calendar component
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
  */
 class WeekCalendar extends Component {
   static displayName = 'WeekCalendar';

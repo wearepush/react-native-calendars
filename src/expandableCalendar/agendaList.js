@@ -15,7 +15,7 @@ const UPDATE_SOURCES = commons.UPDATE_SOURCES;
  * @description: AgendaList component
  * @extends: SectionList
  * @notes: Should be wraped in CalendarProvider component
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
  */
 class AgendaList extends Component {
   static displayName = 'AgendaList';

@@ -18,7 +18,7 @@ const TOP_POSITION = 65;
 
 /**
  * @description: Calendar context provider component
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
  */
 class CalendarProvider extends Component {
   static displayName = 'CalendarProvider';

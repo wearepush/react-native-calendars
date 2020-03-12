@@ -7,7 +7,7 @@ registerScreens();
 console.ignoredYellowBox = ['Remote debugger'];
 
 /*
-import {LocaleConfig} from 'react-native-calendars';
+import {LocaleConfig} from 'wearepush-wearepush-react-native-calendars';
 
 LocaleConfig.locales['fr'] = {
   monthNames: ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],

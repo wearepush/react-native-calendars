@@ -23,8 +23,8 @@ const EmptyArray = [];
 
 /**
  * @description: Calendar component
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/calendars.js
- * @gif: https://github.com/wix/react-native-calendars/blob/master/demo/calendar.gif
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/calendars.js
+ * @gif: https://github.com/wix/wearepush-react-native-calendars/blob/master/demo/calendar.gif
  */
 class Calendar extends Component {
   static displayName = 'Calendar';

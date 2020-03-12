@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Alert, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {Agenda} from 'react-native-calendars';
+import {Agenda} from 'wearepush-react-native-calendars';
 
 
 export default class AgendaScreen extends Component {

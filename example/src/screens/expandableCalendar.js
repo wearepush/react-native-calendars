@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   Button
 } from 'react-native';
-import {ExpandableCalendar, AgendaList, CalendarProvider, WeekCalendar} from 'react-native-calendars';
+import {ExpandableCalendar, AgendaList, CalendarProvider, WeekCalendar} from 'wearepush-react-native-calendars';
 
 
 const today = new Date().toISOString().split('T')[0];

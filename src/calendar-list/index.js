@@ -18,8 +18,8 @@ const {width} = Dimensions.get('window');
  * @description: Calendar List component for both vertical and horizontal calendars
  * @extends: Calendar
  * @extendslink: docs/Calendar
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/calendarsList.js
- * @gif: https://github.com/wix/react-native-calendars/blob/master/demo/calendar-list.gif
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/calendarsList.js
+ * @gif: https://github.com/wix/wearepush-react-native-calendars/blob/master/demo/calendar-list.gif
  */
 class CalendarList extends Component {
   static displayName = 'CalendarList';

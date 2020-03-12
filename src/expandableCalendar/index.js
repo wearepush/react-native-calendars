@@ -39,7 +39,7 @@ const DAY_NAMES_PADDING = 24;
  * @description: Expandable calendar component
  * @extends: CalendarList
  * @extendslink: docs/CalendarList
- * @example: https://github.com/wix/react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
+ * @example: https://github.com/wix/wearepush-react-native-calendars/blob/master/example/src/screens/expandableCalendar.js
  */
 class ExpandableCalendar extends Component {
   static displayName = 'ExpandableCalendar';

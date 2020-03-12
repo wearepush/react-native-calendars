@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, ScrollView, Text} from 'react-native';
-import {Calendar} from 'react-native-calendars';
+import {Calendar} from 'wearepush-react-native-calendars';
 
 export default class CalendarsScreen extends Component {
   constructor(props) {
