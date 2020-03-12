@@ -49,10 +49,19 @@ export default class CalendarsScreen extends Component {
               text: {
                 color: 'blue'
               }
+            },
+            today: {
+              container: {
+                backgroundColor: 'yellow'
+              },
+              text: {
+                color: 'green'
+              }
             }
           }}
           markedDates={{
             '2012-05-01': {
+              today: true,
               dots: [
                 {key: 'vacation', color: 'blue', selectedDotColor: 'yellow'},
                 {key: 'massage', color: 'yellow', selectedDotColor: 'blue'},
@@ -71,6 +80,7 @@ export default class CalendarsScreen extends Component {
               startingDay: true,
               color: 'gray',
               selectedDate: true,
+              today: true,
               dots: [
                 {key: 'vacation', color: 'blue', selectedDotColor: 'yellow'},
                 {key: 'massage', color: 'yellow', selectedDotColor: 'blue'},
@@ -78,7 +88,7 @@ export default class CalendarsScreen extends Component {
               ]
             },
             '2012-05-22': {endingDay: true, color: 'gray'},
-            '2012-05-24': {startingDay: true, color: 'gray'},
+            '2012-05-24': {startingDay: true, color: 'gray', today: true},
             '2012-05-25': {color: 'gray'},
             '2012-05-26': {endingDay: true, color: 'gray'},
             '2012-05-28': {

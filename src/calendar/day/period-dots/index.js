@@ -158,6 +158,9 @@ class Day extends Component {
       if (flags.rightFillerStyle) {
         rightFillerStyle.backgroundColor = flags.rightFillerStyle;
       }
+      if (this.props.marking.today && this.props.theme.today) {
+        textStyle.push(this.props.theme.today.text);
+      }
       if (this.props.marking.selectedDate && this.props.theme.selectedDate) {
         textStyle.push(this.props.theme.selectedDate.text);
       }
@@ -197,6 +200,9 @@ class Day extends Component {
         containerStyle.push({
           backgroundColor: flags.endingDay.color
         });
+      }
+      if (this.props.marking.today && this.props.theme.today) {
+        containerStyle.push(this.props.theme.today.container);
       }
       if (this.props.marking.selectedDate && this.props.theme.selectedDate) {
         containerStyle.push(this.props.theme.selectedDate.container);
