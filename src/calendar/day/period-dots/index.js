@@ -207,6 +207,43 @@ class Day extends Component {
       if (this.props.marking.selectedDate && this.props.theme.selectedDate) {
         containerStyle.push(this.props.theme.selectedDate.container);
       }
+      if(this.props.marking && this.props.marking.expected_period) {
+        const isLeftRadius = !!this.props.marking.expecredStartingDay;
+        const isRightRadius = !!this.props.marking.expecredEndingDay;
+        fillerStyle = {
+          ...fillerStyle,
+          borderBottomWidth: isLeftRadius || isRightRadius ? 1 : 0,
+          borderTopWidth: isLeftRadius || isRightRadius ? 1 : 0,
+          borderLeftWidth: isLeftRadius ? 1 : 0,
+          borderRightWidth: isRightRadius ? 1 : 0,
+          borderTopRightRadius: isRightRadius ? 19 : 0,
+          borderBottomRightRadius: isRightRadius ? 19 : 0,
+          borderTopLeftRadius: isLeftRadius ? 19 : 0,
+          borderBottomLeftRadius: isLeftRadius ? 19 : 0,
+          left: isLeftRadius ? 12 : 0,
+          right: isRightRadius ? 12 : 0,
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: '#F97575'
+        },
+        leftFillerStyle = {
+          ...leftFillerStyle,
+          borderTopWidth: isLeftRadius || isRightRadius ? 0 : 1,
+          borderBottomWidth: isLeftRadius || isRightRadius ? 0 : 1,
+          borderRadius: isLeftRadius ? 19 : 0,
+          opacity: isLeftRadius ? 0 : 1,
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: '#F97575'
+        },
+        rightFillerStyle ={
+          ...rightFillerStyle,
+          borderTopWidth: isLeftRadius || isRightRadius ? 0 : 1,
+          borderBottomWidth: isLeftRadius || isRightRadius ? 0 : 1,
+          borderRadius: isRightRadius ? 19 : 0,
+          opacity: isRightRadius ? 0 : 1,
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: '#F97575'
+        };
+      }
       fillers = (
         <View style={[this.style.fillers, fillerStyle]}>
           <View style={[this.style.leftFiller, leftFillerStyle]}/>
@@ -214,6 +251,7 @@ class Day extends Component {
         </View>
       );
     }
+
     const marking = this.props.marking || {};
     const dot = this.renderDots(marking);
     return (
