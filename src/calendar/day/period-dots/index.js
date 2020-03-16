@@ -212,6 +212,7 @@ class Day extends Component {
         const isRightRadius = !!this.props.marking.expecredEndingDay;
         fillerStyle = {
           ...fillerStyle,
+          overflow: 'hidden',
           borderBottomWidth: isLeftRadius || isRightRadius ? 1 : 0,
           borderTopWidth: isLeftRadius || isRightRadius ? 1 : 0,
           borderLeftWidth: isLeftRadius ? 1 : 0,
@@ -222,8 +223,8 @@ class Day extends Component {
           borderBottomLeftRadius: isLeftRadius ? 19 : 0,
           left: isLeftRadius ? 12 : 0,
           right: isRightRadius ? 12 : 0,
-          backgroundColor: 'rgba(0,0,0,0)',
-          borderColor: '#F97575'
+          borderColor: '#F97575',
+          backgroundColor:  this.props.marking.filterColor
         },
         leftFillerStyle = {
           ...leftFillerStyle,
@@ -231,8 +232,8 @@ class Day extends Component {
           borderBottomWidth: isLeftRadius || isRightRadius ? 0 : 1,
           borderRadius: isLeftRadius ? 19 : 0,
           opacity: isLeftRadius ? 0 : 1,
-          backgroundColor: 'rgba(0,0,0,0)',
-          borderColor: '#F97575'
+          borderColor: '#F97575',
+          backgroundColor: this.props.marking.leftFilterColor
         },
         rightFillerStyle ={
           ...rightFillerStyle,
@@ -240,8 +241,8 @@ class Day extends Component {
           borderBottomWidth: isLeftRadius || isRightRadius ? 0 : 1,
           borderRadius: isRightRadius ? 19 : 0,
           opacity: isRightRadius ? 0 : 1,
-          backgroundColor: 'rgba(0,0,0,0)',
-          borderColor: '#F97575'
+          borderColor: '#F97575',
+          backgroundColor: this.props.marking.rightFilterColor
         };
       }
       fillers = (
