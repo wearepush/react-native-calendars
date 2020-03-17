@@ -233,6 +233,7 @@ class Day extends Component {
           borderRadius: isLeftRadius ? 19 : 0,
           opacity: isLeftRadius ? 0 : 1,
           borderColor: '#F97575',
+          overflow: 'hidden',
           backgroundColor: this.props.marking.leftFilterColor
         },
         rightFillerStyle ={
@@ -242,6 +243,7 @@ class Day extends Component {
           borderRadius: isRightRadius ? 19 : 0,
           opacity: isRightRadius ? 0 : 1,
           borderColor: '#F97575',
+          overflow: 'hidden',
           backgroundColor: this.props.marking.rightFilterColor
         };
       }
