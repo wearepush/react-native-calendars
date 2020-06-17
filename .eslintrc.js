@@ -21,7 +21,7 @@ module.exports = {
       "react"
   ],
   "rules": {
-      "comma-dangle": ['error', 'never'],
+      "comma-dangle": 0,
       "indent": ["error", 2],
       "linebreak-style": ["error", "unix"],
       "no-unused-vars": 2,
