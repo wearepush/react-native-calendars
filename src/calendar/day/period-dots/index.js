@@ -208,8 +208,8 @@ class Day extends Component {
         containerStyle.push(this.props.theme.selectedDate.container);
       }
       if(this.props.marking && this.props.marking.expected_period) {
-        const isLeftRadius = !!this.props.marking.expecredStartingDay;
-        const isRightRadius = !!this.props.marking.expecredEndingDay;
+        const isLeftRadius = !!this.props.marking.expectedStartingDay;
+        const isRightRadius = !!this.props.marking.expectedEndingDay;
         fillerStyle = {
           ...fillerStyle,
           overflow: 'hidden',
